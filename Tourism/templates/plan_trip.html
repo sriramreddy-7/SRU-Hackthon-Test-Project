@@ -1,0 +1,60 @@
+{% extends 'home.html' %} {% block title %} Plan Your {% endblock %}
+<h1></h1>
+{% block content %}
+
+<style>
+  .container {
+    margin-top: 25px;
+  }
+  .body {
+    background-color: #fff7e9;
+    color: #fff7e9;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  .row {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+</style>
+<div class="row">
+  <div class="card" style="width: 18rem">
+    <img
+      src="https://www.oneindia.com/img/2022/02/medaram-jatara-1645008251.jpg"
+      class="card-img-top"
+      alt="medaram_jatra"
+    />
+    <div class="card-body">
+      <p class="card-text">
+        Sammakka Saralamma Jatara or Medaram Jatara is a tribal festival of
+        honouring the goddesses celebrated in the state of Telangana, India.
+      </p>
+      <center>
+        <a href="{% url 'medaram_jatra' %}" class="btn btn-primary"
+          >Medarm Jatra</a
+        >
+      </center>
+    </div>
+  </div>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <div class="card" style="width: 18rem">
+    <img
+      src="https://assets.thehansindia.com/h-upload/2021/07/22/1090476-ramppa.webp"
+      class="card-img-top"
+      alt="Rampaa Temple"
+    />
+    <div class="card-body">
+      <p class="card-text">
+        Ramappa Temple, also known as the Rudreshwara temple, is a Kakatiya
+        style Hindu temple dedicated to the god Shiva, located in Telangana,
+        India.
+      </p>
+      <center>
+        <a href="{% url 'rampaa' %}" class="btn btn-primary">Rampaa Temple</a>
+      </center>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block body %} {% endblock body%}
